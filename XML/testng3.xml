@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="Test.Listeners"/>
+	</listeners>
+	<test thread-count="5" name="Gold Loan">
+	<parameter name="URL" value="amazon.com"/>
+	<parameter name="CODE" value="@123@903#"/>
+	
+	<groups>
+		<run>
+		<include name="Smoke"/>
+		</run>	
+	</groups>
+		<classes>
+			<class name="Test.Intro"/>
+			<class name="Test.Loans"/>
+			<class name="Test.Next"/>
+			<class name="Test.PersonalLoan"/>
+		</classes>
+	</test>
+	
+</suite>	
+ 

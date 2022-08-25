@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Gold Loan(failed)">
+    <classes>
+      <class name="Test.Loans">
+        <methods>
+          <include name="APILogin"/>
+          <include name="LastExecution"/>
+          <include name="Afmethod"/>
+          <include name="WebLogin"/>
+        </methods>
+      </class> <!-- Test.Loans -->
+    </classes>
+  </test> <!-- Gold Loan(failed) -->
+  <test thread-count="5" name="Loan Details(failed)">
+    <classes>
+      <class name="Test.PersonalLoan">
+        <methods>
+          <include name="BfSuite"/>
+          <include name="HomeWebLogin"/>
+          <include name="bfmethod"/>
+        </methods>
+      </class> <!-- Test.PersonalLoan -->
+    </classes>
+  </test> <!-- Loan Details(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
